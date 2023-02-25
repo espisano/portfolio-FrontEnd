@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoAP{
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*--- Para la vista de celular ---*/
+@media (max-width: 575px){
+    .container{
+        flex-direction: column;
+    }
+}
+    

@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+img{
+    width: 35px;
+    margin-right: 10px;
+}
+
+/*--- Para la vista de celular ---*/
+@media (max-width: 575px){
+    .container{
+        flex-direction: column;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social img{
+        margin: 0.2em;
+    }
+}

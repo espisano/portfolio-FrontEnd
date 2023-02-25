@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+div{
+    background-color: #a1b5cb;
+    
+}
+
+app-social-media{    
+    margin-top: 25px ;
+    
+}
+
+    

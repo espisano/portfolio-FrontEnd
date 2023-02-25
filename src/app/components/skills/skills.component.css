@@ -1,0 +1,14 @@
+.row {
+align-content: center;
+padding-left: 10%;
+}
+
+h1{
+    text-align: center;
+    padding-left: 40px;
+}
+
+div{
+    background-color: #a1b5cb;
+    text-align: center;
+}
