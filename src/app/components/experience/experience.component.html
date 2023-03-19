@@ -1,46 +1,31 @@
-<div class="">
-<h1>Experiencia laboral</h1>
+<div class="row">
+    <h1>Experiencia laboral</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/newExperience" *ngIf="isLogged">
+            Nueva Experiencia
+        </button>
+    </div>
 
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experience of exp">
+                    <td>
+                        <h2>{{Experience.companyName}}</h2>
+                    </td>
+                    <td>{{Experience.jobDescription}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editExperience/{{Experience.id}}">
+                            EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Experience.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<ul class="list-group">
-    <li class="list-group-item">
-        <div class="row">
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <img src="../../../assets/logo-empresa-random.png" alt="" class="img-fluid" id="company-logo">
-            </div>
-
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="company-name">
-                <h2>SARASA</h2>
-                <h3>(año - año)</h3>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="experience">
-                <H3>Cargo</H3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Eveniet nam, vitae labore ullam blanditiis officia tempore laborum quas esse. 
-                Ipsa fuga reprehenderit nam voluptates. Nihil modi similique provident ullam quod!</p>
-            </div>
-        </div> 
-        <div class="row">
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <img src="../../../assets/logo-empresa-random.png" alt="" class="img-fluid" id="company-logo">
-            </div>
-
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="company-name">
-                <h2>SARASA</h2>
-                <h3>(año - año)</h3>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="experience">
-                <H3>Cargo</H3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Eveniet nam, vitae labore ullam blanditiis officia tempore laborum quas esse. 
-                Ipsa fuga reprehenderit nam voluptates. Nihil modi similique provident ullam quod!</p>
-            </div>
-        </div> 
-
-    </li>
-
-</ul>
 </div>
-
-
-
