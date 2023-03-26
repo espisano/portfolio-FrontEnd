@@ -1,14 +1,10 @@
-.row {
-align-content: center;
-padding-left: 10%;
-}
-
-h1{
-    text-align: center;
-    padding-left: 40px;
-}
-
-div{
+.row{
     background-color: #a1b5cb;
-    text-align: center;
+    padding: 55px;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
