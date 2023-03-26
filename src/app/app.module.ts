@@ -23,6 +23,11 @@ import { NewExperienceComponent } from './components/experience/new-experience.c
 import { EditExperienceComponent } from './components/experience/edit-experience.component';
 import { NewStudiesComponent } from './components/studies/new-studies.component';
 import { EditStudiesComponent } from './components/studies/edit-studies.component';
+import { NewSkillComponent } from './components/skills/new-skill.component';
+import { EditSkillComponent } from './components/skills/edit-skill.component';
+import { EditAboutMeComponent } from './components/about-me/edit-about-me.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +47,11 @@ import { EditStudiesComponent } from './components/studies/edit-studies.componen
     NewExperienceComponent,
     EditExperienceComponent,
     NewStudiesComponent,
-    EditStudiesComponent
+    EditStudiesComponent,
+    NewSkillComponent,
+    EditSkillComponent,
+    EditAboutMeComponent,
+    FooterComponent
   ],
   imports: [
     FormsModule,
